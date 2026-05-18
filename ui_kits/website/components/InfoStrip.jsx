@@ -1,5 +1,12 @@
 function Marquee() {
-  const items = ['Open-Air vom Container', '31.07 — 01.08 · 2026', 'Schwanfeld · Bayern', 'Eintritt frei · Spende für die Band'];
+  const items = [
+    'Open-Air auf der Lichtung',
+    'Fr 31.07 Classic Rock',
+    'Sa 01.08 All Mixed Up · Club DJ',
+    'Familientag Sa ab 14:00 · frei',
+    'Bezahlt in Bergomarks',
+    'Shuttle ab Schule Schwanfeld',
+  ];
   const repeated = [...items, ...items, ...items, ...items];
   return (
     <div className="marquee" aria-hidden="true">
@@ -12,35 +19,4 @@ function Marquee() {
   );
 }
 
-function InfoStrip() {
-  return (
-    <section className="infostrip" id="info">
-      <div className="top" />
-      <div className="row">
-        <div className="cell">
-          <div className="k">Eintritt</div>
-          <div className="v">Frei</div>
-          <div className="sub">Spende für die Band willkommen.</div>
-        </div>
-        <div className="cell">
-          <div className="k">Bezahlung</div>
-          <div className="v">Bar &amp; EC</div>
-          <div className="sub">Keine Kreditkarte am Stand.</div>
-        </div>
-        <div className="cell">
-          <div className="k">Verpflegung</div>
-          <div className="v">Gegrilltes</div>
-          <div className="sub">Bratwurst, Pommes, Bier, Limo.</div>
-        </div>
-        <div className="cell">
-          <div className="k">Bei Regen</div>
-          <div className="v">Findet statt</div>
-          <div className="sub">Wir spielen unterm Container.</div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 window.Marquee = Marquee;
-window.InfoStrip = InfoStrip;

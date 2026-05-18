@@ -1,11 +1,11 @@
-# Bergamo — Open-Air vom Container
+# Bergamo — Open-Air · Container e.V.
 
-Design system for **BERGAMO**, a two-night open-air music festival held on a field between Schwanfeld and Untereisenheim, Lower Franconia / Bavaria. The stage is built around a steel shipping container — hence the tagline **"Open-Air vom Container"**.
+Design system for **BERGAMO**, a two-night open-air music festival held on a field between Schwanfeld and Untereisenheim, Lower Franconia / Bavaria. The stage is built around a steel shipping container — hence the tagline **"Open-Air · Container e.V."**.
 
 ## At a glance
 
 - **Brand:** BERGAMO
-- **Tagline:** Open-Air vom Container
+- **Tagline:** Open-Air · Container e.V.
 - **Location:** Schwanfeld, Bayern (49.909626, 10.144008)
 - **Edition covered here:** 2026
   - **Fri, 31 July 2026** — Classic Rock '80er & '90er, 21:00 Uhr
@@ -44,7 +44,7 @@ If you have prior festival posters, T-shirts, flyers, photos of the container/st
 **Casing:** Headlines are **ALL CAPS** — it's a poster. Body copy is sentence case, German nouns capitalized as normal. Dates and times in their normal German form.
 
 **Tone examples — do:**
-- "BERGAMO. Open-Air vom Container."
+- "BERGAMO. Open-Air · Container e.V.."
 - "Zwei Nächte. Eine Bühne. Ein Container."
 - "Anfahrt: zwischen Schwanfeld und Untereisenheim. Folgt der Beschilderung ab Ortsausgang."
 - "Eintritt frei. Spende für die Band."
@@ -72,7 +72,7 @@ Inline when there isn't: `Fr 31.07. · Classic Rock · 21:00`.
 **Microcopy:**
 - Call-to-action verbs are short and physical: "Anfahrt", "Folgen", "Teilen", "Merken".
 - Negative/practical info is matter-of-fact, not apologetic: "Keine Kartenzahlung. Bargeld und EC."
-- The container is a recurring character — refer to it by name ("der Container", "vom Container", "am Container") rather than abstracting it into "venue" or "stage".
+- The container is a recurring character — refer to it by name ("der Container", "Container e.V.", "am Container") rather than abstracting it into "venue" or "stage".
 
 ---
 
@@ -90,8 +90,8 @@ A small, deliberately limited palette. We commit hard to one hot accent (Contain
 | `--paper` | `#F4ECDD` | Default page background. Warm bone, like Riso paper. |
 | `--paper-2` | `#EADFCA` | Slightly darker paper, for cards/sections on `--paper`. |
 | `--night` | `#101826` | Deep navy. Used full-bleed for "night" sections and posters. |
-| `--container` | `#E55A18` | THE accent. Container/safety orange. Always with intent. |
-| `--container-deep` | `#B7390A` | Pressed/hover/shadow of `--container`. |
+| `--container` | `#8B1E2D` | THE accent. Container/safety orange. Always with intent. |
+| `--container-deep` | `#641520` | Pressed/hover/shadow of `--container`. |
 | `--hopfen` | `#3F5A2A` | Bavarian hop green, used sparingly for "Mixed Up" night. |
 | `--steel` | `#6E6A63` | Warm-grey neutral for secondary text and borders. |
 | `--steel-2` | `#A8A294` | Lighter steel — disabled, faint rules. |
@@ -173,7 +173,7 @@ Bergamo is **not an icon-heavy brand.** A festival poster doesn't need a UI icon
 **Brand marks** (in `assets/`):
 
 - `logo-bergamo.svg` — the BERGAMO wordmark, condensed display.
-- `logo-stacked.svg` — wordmark stacked over "Open-Air vom Container".
+- `logo-stacked.svg` — wordmark stacked over "Open-Air · Container e.V.".
 - `mark-container.svg` — the container silhouette with antenna/cable rig — used as a stand-alone monogram (favicon, social avatar).
 - `corrugated.svg` — repeating corrugated-metal stripe pattern, used as a section divider.
 - `stamp-bergamo.svg` — circular "rubber-stamp" version of the wordmark, for tickets / merch mockups.

@@ -11,17 +11,19 @@ function Footer() {
         </div>
         <div className="col">
           <div className="k">Wo</div>
-          <span className="v">Zwischen Schwanfeld &amp; Untereisenheim</span>
-          <span className="v" style={{fontFamily: 'var(--font-mono)', fontSize: 12, letterSpacing: '0.04em'}}>49.909626, 10.144008</span>
+          <span className="v">Lichtung am Berg<br/>zw. Schwanfeld &amp; Untereisenheim</span>
+          <span className="v" style={{fontFamily: 'var(--font-mono)', fontSize: 12, letterSpacing: '0.04em', color: 'var(--steel-2)'}}>49.909626, 10.144008</span>
         </div>
         <div className="col">
           <div className="k">Wann</div>
           <span className="v">Fr 31.07.2026 · Sa 01.08.2026</span>
-          <span className="v" style={{color: 'var(--steel-2)'}}>ab 21:00 Uhr</span>
+          <span className="v" style={{color: 'var(--steel-2)'}}>Familientag Sa 14:00 (frei)</span>
+          <span className="v" style={{color: 'var(--steel-2)'}}>Konzerte ab 21:00 · Eintritt 5&nbsp;€</span>
         </div>
         <div className="col">
-          <div className="k">© 2026</div>
-          <span className="v" style={{color: 'var(--steel-2)'}}>Bergamo — Open-Air vom Container</span>
+          <div className="k">Veranstalter</div>
+          <span className="v">Container e.V.</span>
+          <span className="v" style={{color: 'var(--steel-2)', fontSize: 12}}>© 2026 · Bergamo Open-Air</span>
         </div>
       </div>
     </footer>

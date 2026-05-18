@@ -5,7 +5,8 @@ function App() {
       <Hero />
       <Marquee />
       <Lineup />
-      <InfoStrip />
+      <Bergomarks />
+      <Bars />
       <Anfahrt />
       <Footer />
     </React.Fragment>

@@ -7,7 +7,7 @@ The Bergamo 2026 single-page open-air festival site. Built as the deliverable fr
 - `index.html` — the page, loads React + Babel and the JSX components below.
 - `App.jsx` — top-level composition. Order of sections.
 - `components/TopBar.jsx` — sticky nav, backdrop-blur on scroll, Instagram pill.
-- `components/Hero.jsx` — full-bleed poster: BERGAMO wordmark + "Open-Air vom Container" + dates.
+- `components/Hero.jsx` — full-bleed poster: BERGAMO wordmark + "Open-Air · Container e.V." + dates.
 - `components/Lineup.jsx` — the two-night lineup, side-by-side ticket cards.
 - `components/InfoStrip.jsx` — practical info row (Eintritt, Bezahlung, Verpflegung) on corrugated divider.
 - `components/Anfahrt.jsx` — directions, coordinates, Google-Maps link, address.

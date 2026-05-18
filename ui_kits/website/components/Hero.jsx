@@ -15,7 +15,7 @@ function Hero() {
         <span className="sep">·</span>
         <span>Familientag Sa ab 14:00</span>
         <span className="sep">·</span>
-        <span>Konzerte ab 21:00</span>
+        <span>Veranstaltung ab 21:00</span>
       </div>
       <div className="ctas">
         <a href="#lineup" className="btn primary"

@@ -18,7 +18,7 @@ function Footer() {
           <div className="k">Wann</div>
           <span className="v">Fr 31.07.2026 · Sa 01.08.2026</span>
           <span className="v" style={{color: 'var(--steel-2)'}}>Familientag Sa 14:00 (frei)</span>
-          <span className="v" style={{color: 'var(--steel-2)'}}>Konzerte ab 21:00 · Eintritt 5&nbsp;€</span>
+          <span className="v" style={{color: 'var(--steel-2)'}}>Veranstaltung ab 21:00 Uhr · Eintritt 5&nbsp;€</span>
         </div>
         <div className="col">
           <div className="k">Veranstalter</div>

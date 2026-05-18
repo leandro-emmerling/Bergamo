@@ -52,8 +52,8 @@ body { background: var(--paper); color: var(--ink); overflow-x: hidden; }
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  padding: clamp(48px, 9vw, 120px) clamp(20px, 4vw, 48px) clamp(40px, 6vw, 80px);
-  display: flex; flex-direction: column; gap: clamp(16px, 2.4vw, 28px);
+  padding: clamp(48px, 7vw, 96px) clamp(20px, 4vw, 48px) clamp(40px, 5vw, 64px);
+  display: flex; flex-direction: column; gap: clamp(12px, 1.8vw, 20px);
   border-bottom: 1px solid var(--ink);
   overflow: hidden;
 }
@@ -65,16 +65,19 @@ body { background: var(--paper); color: var(--ink); overflow-x: hidden; }
 }
 .hero .eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--container); display: inline-block; }
 
-/* Lockup: berg sits BEHIND the wordmark, both centred together */
+/* Lockup: berg sits BEHIND the wordmark, left-aligned poster lockup */
 .hero .hero-lockup {
   position: relative;
   width: 100%;
-  display: flex; align-items: center; justify-content: center;
-  margin: clamp(8px, 2vw, 24px) 0;
+  display: flex; align-items: center; justify-content: flex-start;
+  margin: clamp(8px, 2vw, 16px) 0 0;
 }
 .hero .hero-berg {
   position: absolute;
-  width: clamp(280px, 42vw, 560px);
+  left: 6%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(280px, 36vw, 480px);
   height: auto;
   opacity: 0.12;
   pointer-events: none;
@@ -86,12 +89,14 @@ body { background: var(--paper); color: var(--ink); overflow-x: hidden; }
   z-index: 1;
   display: block;
   width: 100%;
-  max-width: clamp(360px, 60vw, 720px);
+  max-width: clamp(320px, 50vw, 600px);
   height: auto;
   /* red sticker offset — risograph misprint vibe */
   filter: drop-shadow(4px 4px 0 var(--container));
 }
 @media (max-width: 720px) {
+  .hero .hero-lockup { justify-content: center; }
+  .hero .hero-berg { left: 50%; transform: translate(-50%, -50%); }
   .hero .wordmark-img {
     max-width: 100%;
     filter: drop-shadow(3px 3px 0 var(--container));
@@ -99,8 +104,8 @@ body { background: var(--paper); color: var(--ink); overflow-x: hidden; }
 }
 .hero .tag {
   font-family: var(--font-display); font-weight: 800;
-  font-size: clamp(40px, 6vw, 96px);
-  line-height: 0.95; letter-spacing: -0.02em; text-transform: uppercase;
+  font-size: clamp(32px, 4.2vw, 64px);
+  line-height: 0.95; letter-spacing: -0.01em; text-transform: uppercase;
   color: var(--container); margin: 0;
 }
 .hero .dateline {

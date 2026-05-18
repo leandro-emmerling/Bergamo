@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 32px; background: var(--paper); min-height: 100vh; display: flex; align-items: center; }
+  .row { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .b { width: 110px; height: 70px; background: var(--paper-2); border: 1px solid var(--ink); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 900; text-transform: uppercase; color: var(--ink); }
+  .stamp { box-shadow: 6px 6px 0 var(--ink); }
+  .stamp-sm { box-shadow: 3px 3px 0 var(--ink); }
+  .stamp-accent { box-shadow: 6px 6px 0 var(--container); }
+  .soft { box-shadow: 0 8px 24px rgba(11,14,18,0.12); border-color: var(--steel-3); }
+  .label { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); }
+  .val { font-family: var(--font-mono); font-size: 10px; color: var(--steel); }
+</style></head>
+<body>
+  <div class="row">
+    <div class="item"><div class="b stamp">Stamp</div><div class="label">stamp</div><div class="val">6 6 0 ink</div></div>
+    <div class="item"><div class="b stamp-sm">Stamp-sm</div><div class="label">stamp-sm</div><div class="val">3 3 0 ink</div></div>
+    <div class="item"><div class="b stamp-accent">Accent</div><div class="label">stamp-accent</div><div class="val">6 6 0 container</div></div>
+    <div class="item"><div class="b soft">Soft</div><div class="label">soft</div><div class="val">menus / modals</div></div>
+  </div>
+</body></html>

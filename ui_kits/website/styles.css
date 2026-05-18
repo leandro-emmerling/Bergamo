@@ -57,7 +57,33 @@ body { background: var(--paper); color: var(--ink); overflow-x: hidden; }
   padding: clamp(48px, 9vw, 120px) clamp(20px, 4vw, 48px) clamp(40px, 6vw, 80px);
   display: flex; flex-direction: column; gap: clamp(16px, 2.4vw, 28px);
   border-bottom: 1px solid var(--ink);
+  overflow: hidden;
 }
+
+/* Bildmarke (Berg) as a giant faded watermark in the back */
+.hero .hero-berg {
+  position: absolute;
+  right: -6%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(360px, 55vw, 720px);
+  height: auto;
+  opacity: 0.07;
+  pointer-events: none;
+  z-index: 0;
+  filter: contrast(1.2);
+}
+@media (max-width: 720px) {
+  .hero .hero-berg {
+    right: -20%;
+    top: 38%;
+    width: 120%;
+    opacity: 0.06;
+  }
+}
+
+.hero > *:not(.hero-berg) { position: relative; z-index: 1; }
+
 .hero .eyebrow {
   display: flex; align-items: center; gap: 12px;
   font-family: var(--font-mono); font-weight: 700; font-size: 12px;
@@ -65,36 +91,12 @@ body { background: var(--paper); color: var(--ink); overflow-x: hidden; }
 }
 .hero .eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--container); display: inline-block; }
 
-.hero .hero-lockup {
-  position: relative;
-  width: 100%;
-  display: flex; align-items: flex-end;
-  gap: clamp(16px, 3vw, 40px);
-}
 .hero .wordmark-img {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
-  /* the asset has lots of bottom whitespace; trim visually */
-  margin-bottom: -2vw;
-}
-.hero .bildmarke-img {
-  position: absolute;
-  right: 0; top: -2vw;
-  width: clamp(110px, 14vw, 200px);
-  height: auto;
-  opacity: 0.92;
-  pointer-events: none;
-  transform: rotate(-4deg);
-}
-@media (max-width: 720px) {
-  .hero .bildmarke-img {
-    position: static;
-    width: 100px;
-    transform: rotate(-4deg);
-    margin: 0 0 -16px auto;
-  }
+  margin: 0;
 }
 .hero .tag {
   font-family: var(--font-display); font-weight: 800;

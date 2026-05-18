@@ -19,15 +19,13 @@ body { background: var(--paper); color: var(--ink); overflow-x: hidden; }
   -webkit-backdrop-filter: blur(10px) saturate(140%);
 }
 .topbar .wm {
-  display: inline-flex; align-items: center;
-  text-decoration: none; color: var(--ink);
-}
-.topbar .wm img {
-  display: block;
-  height: 28px; width: auto;
+  font-family: var(--font-display); font-weight: normal;
+  font-size: 28px; letter-spacing: -0.005em;
+  text-transform: uppercase; color: var(--ink);
+  text-decoration: none;
 }
 @media (max-width: 540px) {
-  .topbar .wm img { height: 22px; }
+  .topbar .wm { font-size: 22px; }
 }
 .topbar nav { display: flex; gap: clamp(14px, 2vw, 28px); }
 .topbar nav a {
@@ -60,30 +58,6 @@ body { background: var(--paper); color: var(--ink); overflow-x: hidden; }
   overflow: hidden;
 }
 
-/* Bildmarke (Berg) as a giant faded watermark in the back */
-.hero .hero-berg {
-  position: absolute;
-  right: -6%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: clamp(360px, 55vw, 720px);
-  height: auto;
-  opacity: 0.07;
-  pointer-events: none;
-  z-index: 0;
-  filter: contrast(1.2);
-}
-@media (max-width: 720px) {
-  .hero .hero-berg {
-    right: -20%;
-    top: 38%;
-    width: 120%;
-    opacity: 0.06;
-  }
-}
-
-.hero > *:not(.hero-berg) { position: relative; z-index: 1; }
-
 .hero .eyebrow {
   display: flex; align-items: center; gap: 12px;
   font-family: var(--font-mono); font-weight: 700; font-size: 12px;
@@ -91,12 +65,36 @@ body { background: var(--paper); color: var(--ink); overflow-x: hidden; }
 }
 .hero .eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--container); display: inline-block; }
 
+/* Lockup: berg sits BEHIND the wordmark, both centred together */
+.hero .hero-lockup {
+  position: relative;
+  width: 100%;
+  display: flex; align-items: center; justify-content: center;
+  margin: clamp(8px, 2vw, 24px) 0;
+}
+.hero .hero-berg {
+  position: absolute;
+  width: clamp(280px, 42vw, 560px);
+  height: auto;
+  opacity: 0.12;
+  pointer-events: none;
+  filter: contrast(1.1);
+  z-index: 0;
+}
 .hero .wordmark-img {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
-  margin: 0;
+  /* red sticker offset — risograph misprint vibe */
+  filter: drop-shadow(4px 4px 0 var(--container));
+}
+@media (max-width: 720px) {
+  .hero .wordmark-img {
+    filter: drop-shadow(3px 3px 0 var(--container));
+  }
 }
 .hero .tag {
   font-family: var(--font-display); font-weight: 800;
@@ -327,11 +325,11 @@ body { background: var(--paper); color: var(--ink); overflow-x: hidden; }
   background: var(--ink); color: var(--paper);
   padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 48px) 32px;
 }
-.footer .footer-wm {
-  display: block; width: 100%; height: auto;
+.footer .footer-mark {
+  display: block;
+  width: clamp(160px, 24vw, 280px);
+  height: auto;
   margin: 0 0 clamp(28px, 4vw, 48px);
-  /* black wordmark on dark footer → invert to cream-ish white */
-  filter: invert(1);
 }
 .footer .row {
   display: flex; justify-content: space-between; align-items: flex-end;

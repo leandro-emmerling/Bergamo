@@ -2,24 +2,24 @@ function Hero() {
   const mapUrl = 'https://www.google.com/maps/?q=49.909626,10.144008';
   return (
     <section className="hero" id="top">
-      {/* Bildmarke as a faded background — single visual moment with the wordmark */}
-      <img
-        className="hero-berg"
-        src="../../assets/bergamo-bildmarke-schwarz.png"
-        alt=""
-        aria-hidden="true"
-      />
-
       <div className="eyebrow">
         <span className="dot"></span>
         Open-Air · Schwanfeld · Bayern · MMXXVI
       </div>
 
-      <img
-        className="wordmark-img"
-        src="../../assets/bergamo-wordmark-large.png"
-        alt="BERGAMO"
-      />
+      <div className="hero-lockup">
+        <img
+          className="hero-berg"
+          src="../../assets/bergamo-bildmarke-schwarz.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          className="wordmark-img"
+          src="../../assets/bergamo-wordmark-large.png"
+          alt="BERGAMO"
+        />
+      </div>
 
       <h2 className="tag">Open-Air<br/>Container e.V.</h2>
 

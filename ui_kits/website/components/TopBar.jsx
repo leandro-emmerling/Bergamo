@@ -15,9 +15,7 @@ function TopBar() {
 
   return (
     <header className={`topbar ${scrolled ? 'scrolled' : ''}`}>
-      <a href="#top" className="wm" onClick={go('top')}>
-        <img src="../../assets/bergamo-wordmark.png" alt="BERGAMO" />
-      </a>
+      <a href="#top" className="wm" onClick={go('top')}>Bergamo</a>
       <nav>
         <a href="#lineup" onClick={go('lineup')}>Lineup</a>
         <a href="#versorgung" onClick={go('versorgung')}>Versorgung</a>

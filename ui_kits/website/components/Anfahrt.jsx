@@ -17,8 +17,7 @@ function Anfahrt() {
           </p>
           <div className="coords">49.909626, 10.144008</div>
           <p className="muted">
-            Parken kostenlos auf dem Stoppelfeld neben der Schule.
-            Mit dem Rad: 15&nbsp;Minuten gemütlich hoch.
+            Zu Fuß ab der Schule: 5&nbsp;Minuten laufweg.
           </p>
           <p className="muted">
             <strong>Shuttle</strong>: pendelt am Samstag während des

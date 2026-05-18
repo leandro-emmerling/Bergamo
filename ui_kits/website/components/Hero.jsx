@@ -6,8 +6,23 @@ function Hero() {
         <span className="dot"></span>
         Open-Air · Schwanfeld · Bayern · MMXXVI
       </div>
-      <h1 className="wordmark">Bergamo</h1>
+
+      <div className="hero-lockup">
+        <img
+          className="wordmark-img"
+          src="../../assets/bergamo-wordmark-large.png"
+          alt="BERGAMO"
+        />
+        <img
+          className="bildmarke-img"
+          src="../../assets/bergamo-bildmarke-schwarz.png"
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
+
       <h2 className="tag">Open-Air<br/>Container e.V.</h2>
+
       <div className="dateline">
         <span>Fr 31.07.2026</span>
         <span className="sep">·</span>

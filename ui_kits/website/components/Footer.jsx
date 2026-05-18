@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="footer">
-      <div className="wm">Bergamo</div>
+      <img className="footer-wm" src="../../assets/bergamo-wordmark-large.png" alt="BERGAMO" />
       <div className="row">
         <div className="col">
           <div className="k">Folgt uns</div>

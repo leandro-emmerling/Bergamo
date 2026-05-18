@@ -19,9 +19,15 @@ body { background: var(--paper); color: var(--ink); overflow-x: hidden; }
   -webkit-backdrop-filter: blur(10px) saturate(140%);
 }
 .topbar .wm {
-  font-family: var(--font-display); font-weight: 900; font-size: 28px;
-  letter-spacing: -0.02em; text-transform: uppercase; color: var(--ink);
-  text-decoration: none;
+  display: inline-flex; align-items: center;
+  text-decoration: none; color: var(--ink);
+}
+.topbar .wm img {
+  display: block;
+  height: 28px; width: auto;
+}
+@media (max-width: 540px) {
+  .topbar .wm img { height: 22px; }
 }
 .topbar nav { display: flex; gap: clamp(14px, 2vw, 28px); }
 .topbar nav a {
@@ -58,11 +64,37 @@ body { background: var(--paper); color: var(--ink); overflow-x: hidden; }
   letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink);
 }
 .hero .eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--container); display: inline-block; }
-.hero .wordmark {
-  font-family: var(--font-display); font-weight: 900;
-  font-size: clamp(96px, 18vw, 280px);
-  line-height: 0.84; letter-spacing: -0.035em; text-transform: uppercase;
-  color: var(--ink); margin: 0;
+
+.hero .hero-lockup {
+  position: relative;
+  width: 100%;
+  display: flex; align-items: flex-end;
+  gap: clamp(16px, 3vw, 40px);
+}
+.hero .wordmark-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  /* the asset has lots of bottom whitespace; trim visually */
+  margin-bottom: -2vw;
+}
+.hero .bildmarke-img {
+  position: absolute;
+  right: 0; top: -2vw;
+  width: clamp(110px, 14vw, 200px);
+  height: auto;
+  opacity: 0.92;
+  pointer-events: none;
+  transform: rotate(-4deg);
+}
+@media (max-width: 720px) {
+  .hero .bildmarke-img {
+    position: static;
+    width: 100px;
+    transform: rotate(-4deg);
+    margin: 0 0 -16px auto;
+  }
 }
 .hero .tag {
   font-family: var(--font-display); font-weight: 800;
@@ -293,11 +325,11 @@ body { background: var(--paper); color: var(--ink); overflow-x: hidden; }
   background: var(--ink); color: var(--paper);
   padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 48px) 32px;
 }
-.footer .wm {
-  font-family: var(--font-display); font-weight: 900;
-  font-size: clamp(72px, 18vw, 280px);
-  line-height: 0.84; letter-spacing: -0.035em;
-  margin: 0 0 clamp(28px, 4vw, 48px); color: var(--paper);
+.footer .footer-wm {
+  display: block; width: 100%; height: auto;
+  margin: 0 0 clamp(28px, 4vw, 48px);
+  /* black wordmark on dark footer → invert to cream-ish white */
+  filter: invert(1);
 }
 .footer .row {
   display: flex; justify-content: space-between; align-items: flex-end;

@@ -18,8 +18,7 @@ function TopBar() {
       <a href="#top" className="wm" onClick={go('top')}>Bergamo</a>
       <nav>
         <a href="#lineup" onClick={go('lineup')}>Lineup</a>
-        <a href="#bons" onClick={go('bons')}>Bons</a>
-        <a href="#bars" onClick={go('bars')}>Bars</a>
+        <a href="#versorgung" onClick={go('versorgung')}>Versorgung</a>
         <a href="#anfahrt" onClick={go('anfahrt')}>Anfahrt</a>
       </nav>
       <a

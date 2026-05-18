@@ -86,13 +86,14 @@ body { background: var(--paper); color: var(--ink); overflow-x: hidden; }
   z-index: 1;
   display: block;
   width: 100%;
-  max-width: 100%;
+  max-width: clamp(360px, 60vw, 720px);
   height: auto;
   /* red sticker offset — risograph misprint vibe */
   filter: drop-shadow(4px 4px 0 var(--container));
 }
 @media (max-width: 720px) {
   .hero .wordmark-img {
+    max-width: 100%;
     filter: drop-shadow(3px 3px 0 var(--container));
   }
 }

@@ -5,9 +5,9 @@ function Versorgung() {
         <div className="eb">Versorgung</div>
         <h2>Getränke von A&nbsp;bis&nbsp;Z.<br/>Vom Grill bis vegan.</h2>
         <p>
-          Bier vom Fass, Cocktails, Schnaps, Shots — was ihr braucht.
+          Kaltes Bier, Cocktails, Schnaps, Shots — was ihr braucht.
           Dazu Bratwurst, Steak, Currywurst, belegte Laugenstangen,
-          Pommes — und vegane Alternativen, frisch vom Grill.
+          Pommes — und vegane Alternativen.
         </p>
       </div>
     </section>

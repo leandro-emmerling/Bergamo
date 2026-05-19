@@ -17,7 +17,7 @@ function Anfahrt() {
           </p>
           <div className="coords">49.909626, 10.144008</div>
           <p className="muted">
-            Parken kostenlos auf dem Stoppelfeld neben der Schule.
+            Parken kostenlos am Parkplatz an der Schule.
             Mit dem Rad: 15&nbsp;Minuten gemütlich hoch.
           </p>
           <p className="muted">

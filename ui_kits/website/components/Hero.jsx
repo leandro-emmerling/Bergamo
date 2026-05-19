@@ -28,7 +28,9 @@ function Hero() {
         <span className="sep">·</span>
         <span>Sa 01.08.2026</span>
         <span className="sep">·</span>
-        <span>Familientag Sa ab 14:00</span>
+        <span>Eintritt 5&nbsp;€</span>
+        <span className="sep">·</span>
+        <span>Familientag Sa ab 14:00 · frei</span>
         <span className="sep">·</span>
         <span>Veranstaltung ab 21:00</span>
       </div>

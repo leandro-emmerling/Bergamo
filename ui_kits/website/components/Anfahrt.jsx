@@ -12,7 +12,7 @@ function Anfahrt() {
           <h2>Anfahrt.</h2>
           <p>
             Wir feiern auf der <strong>Lichtung am Berg</strong> zwischen
-            <strong> Schwanfeld</strong> und <strong>Untereisenheim</strong>,
+            <strong> Schwanfeld</strong> und <strong>Obereisenheim</strong>,
             Unterfranken. Beschilderung folgen ab Ortsausgang Schwanfeld.
           </p>
           <div className="coords">49.909626, 10.144008</div>

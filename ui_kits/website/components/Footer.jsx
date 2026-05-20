@@ -11,7 +11,7 @@ function Footer() {
         </div>
         <div className="col">
           <div className="k">Wo</div>
-          <span className="v">Lichtung am Berg<br/>zw. Schwanfeld &amp; Untereisenheim</span>
+          <span className="v">Lichtung am Berg<br/>zw. Schwanfeld &amp; Obereisenheim</span>
           <span className="v" style={{fontFamily: 'var(--font-mono)', fontSize: 12, letterSpacing: '0.04em', color: 'var(--steel-2)'}}>49.909626, 10.144008</span>
         </div>
         <div className="col">

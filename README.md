@@ -1,6 +1,6 @@
 # Bergamo — Open-Air · Container e.V.
 
-Design system for **BERGAMO**, a two-night open-air music festival held on a field between Schwanfeld and Untereisenheim, Lower Franconia / Bavaria. The stage is built around a steel shipping container — hence the tagline **"Open-Air · Container e.V."**.
+Design system for **BERGAMO**, a two-night open-air music festival held on a field between Schwanfeld and Obereisenheim, Lower Franconia / Bavaria. The stage is built around a steel shipping container — hence the tagline **"Open-Air · Container e.V."**.
 
 ## At a glance
 
@@ -46,7 +46,7 @@ If you have prior festival posters, T-shirts, flyers, photos of the container/st
 **Tone examples — do:**
 - "BERGAMO. Open-Air · Container e.V.."
 - "Zwei Nächte. Eine Bühne. Ein Container."
-- "Anfahrt: zwischen Schwanfeld und Untereisenheim. Folgt der Beschilderung ab Ortsausgang."
+- "Anfahrt: zwischen Schwanfeld und Obereisenheim. Folgt der Beschilderung ab Ortsausgang."
 - "Eintritt frei. Spende für die Band."
 - "Wir freuen uns auf euch."
 

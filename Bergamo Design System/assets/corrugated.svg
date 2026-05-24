@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <pattern id="cor" x="0" y="0" width="20" height="40" patternUnits="userSpaceOnUse">
+      <rect width="20" height="40" fill="currentColor" fill-opacity="0"></rect>
+      <path d="M0 0 L10 4 L20 0 L20 40 L10 36 L0 40 Z" fill="currentColor" fill-opacity="0.08"></path>
+      <line x1="10" y1="0" x2="10" y2="40" stroke="currentColor" stroke-opacity="0.18" stroke-width="1"></line>
+    </pattern>
+  </defs>
+  <rect width="40" height="40" fill="url(#cor)"></rect>
+</svg>

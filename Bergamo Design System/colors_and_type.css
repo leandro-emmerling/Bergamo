@@ -1,0 +1,288 @@
+/* ============================================================
+   BERGAMO — Design tokens
+   Single source of truth for color, type, spacing, radius, shadow.
+   Import this file first; everything else inherits from it.
+   ============================================================ */
+
+/* --- Fonts -------------------------------------------------- */
+/* Steelfish is the BRAND display face (uploaded by client). */
+@font-face {
+  font-family: 'Steelfish';
+  src: url('./fonts/steelfish_rg.otf') format('opentype');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+/* Space Grotesk + JetBrains Mono come from Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap');
+
+:root {
+  /* ============================================================
+     COLOR — raw palette
+     ============================================================ */
+  --ink:            #0B0E12;   /* near-black with cool tint */
+  --ink-2:          #1A1F27;   /* slight lift from --ink */
+  --paper:          #F4ECDD;   /* warm bone — DEFAULT page bg */
+  --paper-2:        #EADFCA;   /* slightly darker paper (cards) */
+  --paper-3:        #DFD2B8;   /* deeper paper, footers/section caps */
+
+  --night:          #101826;   /* deep navy — "night" surfaces */
+  --night-2:        #1A2438;   /* lifted night for cards on night */
+
+  --container:      #8B1E2D;   /* THE accent */
+  --container-deep: #641520;   /* hover/press of container */
+  --container-soft: #E5C7CC;   /* tint of container, badges */
+
+  --hopfen:         #3F5A2A;   /* Bavarian hop green */
+  --hopfen-soft:    #C6D2B3;
+
+  --steel:          #6E6A63;   /* warm-grey neutral text */
+  --steel-2:        #A8A294;   /* faint rules, disabled */
+  --steel-3:        #CFC8B8;   /* very faint, hairline */
+
+  --haze:           rgba(11, 14, 18, .08);
+  --scrim:          rgba(11, 14, 18, .55);
+
+  /* ============================================================
+     COLOR — semantic on light (--paper)
+     ============================================================ */
+  --fg-1: var(--ink);          /* default body text */
+  --fg-2: var(--steel);        /* secondary text */
+  --fg-3: var(--steel-2);      /* tertiary / disabled */
+  --fg-accent: var(--container);
+
+  --bg-1: var(--paper);        /* page bg */
+  --bg-2: var(--paper-2);      /* card bg */
+  --bg-3: var(--paper-3);      /* deeper bg */
+
+  --border-strong: var(--ink);
+  --border-muted:  var(--steel-2);
+  --border-faint:  var(--steel-3);
+
+  /* link */
+  --link-fg: var(--ink);
+  --link-fg-hover: var(--container-deep);
+  --link-underline: 1px;
+  --link-underline-hover: 2px;
+
+  /* ============================================================
+     COLOR — semantic on dark (--night) — apply via .on-night
+     ============================================================ */
+
+  /* ============================================================
+     TYPE — families
+     ============================================================ */
+  --font-display: 'Steelfish', 'Big Shoulders Display', 'Impact', 'Oswald', sans-serif;
+  --font-body:    'Space Grotesk', 'Helvetica Neue', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* ============================================================
+     TYPE — scale (clamp() for fluidity)
+     ============================================================ */
+  --text-xs:   12px;
+  --text-sm:   14px;
+  --text-base: 16px;
+  --text-md:   18px;
+  --text-lg:   22px;
+  --text-xl:   clamp(28px, 2.4vw, 34px);
+  --text-2xl:  clamp(36px, 3.6vw, 52px);
+  --text-3xl:  clamp(52px, 6vw, 88px);
+  --text-4xl:  clamp(72px, 10vw, 160px);
+  --text-poster: clamp(96px, 14vw, 240px);  /* full-bleed poster type */
+
+  /* line height + tracking */
+  --lh-tight:   1.02;
+  --lh-snug:    1.15;
+  --lh-base:    1.5;
+  --lh-loose:   1.7;
+
+  --tracking-display: -0.01em;
+  --tracking-body:    0;
+  --tracking-mono:    0.04em;
+  --tracking-stamp:   0.12em;
+
+  /* ============================================================
+     SPACING — 8pt grid
+     ============================================================ */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  24px;
+  --s-6:  32px;
+  --s-7:  48px;
+  --s-8:  64px;
+  --s-9:  96px;
+  --s-10: 128px;
+  --s-11: 192px;
+  --s-12: 256px;
+
+  /* layout */
+  --container-max: 1240px;
+  --gutter-mobile: var(--s-4);
+  --gutter-desktop: var(--s-6);
+
+  /* ============================================================
+     RADIUS — mostly flat
+     ============================================================ */
+  --r-0: 0;
+  --r-sm: 4px;
+  --r-md: 8px;       /* photo crops only */
+  --r-full: 999px;   /* pill buttons */
+
+  /* ============================================================
+     SHADOW — hard-offset, "stamped"
+     ============================================================ */
+  --shadow-stamp:        6px 6px 0 var(--ink);
+  --shadow-stamp-sm:     3px 3px 0 var(--ink);
+  --shadow-stamp-accent: 6px 6px 0 var(--container);
+  --shadow-soft:         0 8px 24px rgba(11, 14, 18, .12);
+  --shadow-soft-lg:      0 18px 48px rgba(11, 14, 18, .18);
+  --shadow-inset-rule:   inset 0 -1px 0 var(--border-faint);
+
+  /* ============================================================
+     MOTION
+     ============================================================ */
+  --ease-stamp: cubic-bezier(.2, .7, .2, 1);
+  --dur-fast:   120ms;
+  --dur-base:   180ms;
+  --dur-slow:   320ms;
+}
+
+/* ============================================================
+   GLOBAL DEFAULTS
+   ============================================================ */
+html, body {
+  background: var(--bg-1);
+  color: var(--fg-1);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--lh-base);
+  letter-spacing: var(--tracking-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--container);
+  color: var(--paper);
+}
+
+/* ============================================================
+   SEMANTIC TYPE — use these in components
+   ============================================================ */
+/* Steelfish is a single-weight condensed display face.
+   Use plain `font-weight: normal` everywhere; rely on size + tracking for emphasis. */
+.h1, h1 {
+  font-family: var(--font-display);
+  font-weight: normal;
+  font-size: var(--text-4xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-display);
+  text-transform: uppercase;
+  color: var(--fg-1);
+  margin: 0;
+}
+
+.h2, h2 {
+  font-family: var(--font-display);
+  font-weight: normal;
+  font-size: var(--text-3xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-display);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.h3, h3 {
+  font-family: var(--font-display);
+  font-weight: normal;
+  font-size: var(--text-2xl);
+  line-height: var(--lh-snug);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.h4, h4 {
+  font-family: var(--font-display);
+  font-weight: normal;
+  font-size: var(--text-xl);
+  line-height: var(--lh-snug);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-stamp);
+  text-transform: uppercase;
+  color: var(--fg-2);
+}
+
+.lead {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  line-height: var(--lh-base);
+  color: var(--fg-1);
+}
+
+.body, p { font-family: var(--font-body); font-size: var(--text-base); line-height: var(--lh-base); color: var(--fg-1); margin: 0; }
+.body--muted { color: var(--fg-2); }
+
+.caption {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: var(--lh-base);
+  color: var(--fg-2);
+}
+
+.mono, code, kbd, samp {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+  letter-spacing: var(--tracking-mono);
+}
+
+.mono-stamp {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-stamp);
+  color: var(--fg-1);
+}
+
+.poster {
+  font-family: var(--font-display);
+  font-weight: normal;
+  font-size: var(--text-poster);
+  line-height: 0.88;
+  letter-spacing: -0.005em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   LINK
+   ============================================================ */
+a { color: var(--link-fg); text-decoration: underline; text-decoration-thickness: var(--link-underline); text-underline-offset: 3px; transition: color var(--dur-base) var(--ease-stamp), text-decoration-thickness var(--dur-base) var(--ease-stamp); }
+a:hover { color: var(--link-fg-hover); text-decoration-thickness: var(--link-underline-hover); }
+a:focus-visible { outline: 2px solid var(--container); outline-offset: 2px; }
+
+/* ============================================================
+   ON-NIGHT — flip semantics for dark sections
+   ============================================================ */
+.on-night {
+  background: var(--night);
+  color: var(--paper);
+  --fg-1: var(--paper);
+  --fg-2: var(--steel-2);
+  --fg-3: var(--steel);
+  --bg-1: var(--night);
+  --bg-2: var(--night-2);
+  --border-strong: var(--paper);
+  --border-muted: var(--steel);
+  --link-fg: var(--paper);
+  --link-fg-hover: var(--container);
+  --shadow-stamp: 6px 6px 0 var(--container);
+}

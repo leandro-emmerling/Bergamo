@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 28px 32px; background: var(--paper); min-height: 100vh; display: flex; align-items: center; }
+  .wrap { width: 100%; display: flex; flex-direction: column; gap: 18px; }
+  .stamp { font-family: var(--font-mono); font-weight: 700; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink); }
+  .coord { font-family: var(--font-mono); font-weight: 500; font-size: 18px; color: var(--ink); letter-spacing: 0.04em; }
+  .ticket { display: inline-flex; align-items: center; gap: 12px; padding: 10px 14px; border: 1px solid var(--ink); background: var(--paper-2); }
+  .ticket .num { font-family: var(--font-display); font-weight: 900; font-size: 40px; line-height: 1; color: var(--container); letter-spacing: -1px; }
+  .ticket .lbl { font-family: var(--font-mono); font-weight: 700; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink); }
+  .row { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+</style></head>
+<body>
+  <div class="wrap">
+    <div class="stamp">OPEN-AIR · CONTAINER E.V. · 2026</div>
+    <div class="coord">49.909626, 10.144008</div>
+    <div class="row">
+      <div class="ticket"><span class="num">31</span><div><div class="lbl">Freitag</div><div class="lbl" style="color:var(--steel)">31.07.2026</div></div></div>
+      <div class="ticket"><span class="num">01</span><div><div class="lbl">Samstag</div><div class="lbl" style="color:var(--steel)">01.08.2026</div></div></div>
+    </div>
+  </div>
+</body></html>

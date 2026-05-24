@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Bergamo stamp">
+  <defs>
+    <path id="circlepath" d="M120,120 m-92,0 a92,92 0 1,1 184,0 a92,92 0 1,1 -184,0"></path>
+  </defs>
+  <circle cx="120" cy="120" r="110" fill="none" stroke="currentColor" stroke-width="4"></circle>
+  <circle cx="120" cy="120" r="98" fill="none" stroke="currentColor" stroke-width="2"></circle>
+  <text font-family="JetBrains Mono, monospace" font-weight="700" font-size="14" letter-spacing="6" fill="currentColor">
+    <textPath href="#circlepath" startOffset="2%">OPEN-AIR · CONTAINER E.V. · SCHWANFELD · 2026 · </textPath>
+  </text>
+  <text x="120" y="118" text-anchor="middle" font-family="Steelfish, &#39;Steelfish&#39;, &#39;Big Shoulders Display&#39;, Impact, sans-serif" font-weight="900" font-size="56" fill="currentColor" letter-spacing="-1">BERGAMO</text>
+  <line x1="40" y1="138" x2="200" y2="138" stroke="currentColor" stroke-width="2"></line>
+  <text x="120" y="166" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="14" letter-spacing="4" fill="currentColor">31.07 — 01.08</text>
+</svg>

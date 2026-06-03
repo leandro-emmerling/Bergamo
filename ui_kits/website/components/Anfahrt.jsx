@@ -17,12 +17,11 @@ function Anfahrt() {
           </p>
           <div className="coords">49.909626, 10.144008</div>
           <p className="muted">
-            Parken kostenlos am Parkplatz an der Schule.
-            Mit dem Rad: 15&nbsp;Minuten gemütlich hoch.
+            Parken kostenlos am Parkplatz an der Schule in Schwanfeld.
           </p>
           <p className="muted">
-            <strong>Shuttle</strong>: pendelt am Samstag während des
-            Familientags zwischen Schule und Lichtung.
+            <strong>Shuttle</strong>: pendelt am Samstag während des Familientags
+            zwischen der Schule in Schwanfeld und der Lichtung.
           </p>
           <a href={dirsUrl} target="_blank" rel="noopener noreferrer" className="btn primary">
             Route in Google&nbsp;Maps <span className="arrow"><IconExternal size={18} stroke={2.2}/></span>

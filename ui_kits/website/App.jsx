@@ -7,6 +7,7 @@ function App() {
       <About />
       <Lineup />
       <Versorgung />
+      <Impressionen />
       <Anfahrt />
       <Footer />
     </React.Fragment>

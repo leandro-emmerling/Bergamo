@@ -20,6 +20,7 @@ function TopBar() {
         <a href="#ueber" onClick={go('ueber')}>Über</a>
         <a href="#lineup" onClick={go('lineup')}>Lineup</a>
         <a href="#versorgung" onClick={go('versorgung')}>Versorgung</a>
+        <a href="#impressionen" onClick={go('impressionen')}>Bilder</a>
         <a href="#anfahrt" onClick={go('anfahrt')}>Anfahrt</a>
       </nav>
       <a

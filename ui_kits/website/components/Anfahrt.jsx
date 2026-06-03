@@ -20,8 +20,8 @@ function Anfahrt() {
             Parken kostenlos am Parkplatz an der Schule in Schwanfeld.
           </p>
           <p className="muted">
-            <strong>Shuttle</strong>: pendelt am Samstag während des Familientags
-            zwischen der Schule in Schwanfeld und der Lichtung.
+            <strong>Shuttle</strong>: pendelt am Samstag während des
+            Familientags zwischen Schule Schwanfeld und Lichtung.
           </p>
           <a href={dirsUrl} target="_blank" rel="noopener noreferrer" className="btn primary">
             Route in Google&nbsp;Maps <span className="arrow"><IconExternal size={18} stroke={2.2}/></span>

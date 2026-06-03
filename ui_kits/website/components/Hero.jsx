@@ -2,6 +2,7 @@ function Hero() {
   const mapUrl = 'https://www.google.com/maps/?q=49.909626,10.144008';
   return (
     <section className="hero" id="top">
+      <div className="hero-inner">
       <div className="eyebrow">
         <span className="dot"></span>
         Open-Air · Schwanfeld · Bayern · MMXXVI
@@ -42,6 +43,7 @@ function Hero() {
         <a href={mapUrl} target="_blank" rel="noopener noreferrer" className="btn secondary">
           Anfahrt öffnen <span className="arrow"><IconExternal size={18} stroke={2.2}/></span>
         </a>
+      </div>
       </div>
     </section>
   );

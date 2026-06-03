@@ -27,9 +27,20 @@ fi
 TMP=$(mktemp -d)
 trap 'rm -rf "$TMP"' EXIT
 unzip -q -o "$ZIP" -d "$TMP"
-# push.sh aus dem ZIP NICHT übernehmen (falls doch mal drin)
-rm -f "$TMP/push.sh"
-cp -rT "$TMP" "$REPO"
+
+# Wenn das ZIP einen einzelnen Wrapper-Ordner hat (alles drin) -> in den reinsteigen
+SRC="$TMP"
+COUNT=$(find "$TMP" -mindepth 1 -maxdepth 1 | wc -l)
+if [[ "$COUNT" -eq 1 ]]; then
+  ONLY=$(find "$TMP" -mindepth 1 -maxdepth 1)
+  if [[ -d "$ONLY" ]]; then
+    SRC="$ONLY"
+    echo "Wrapper erkannt: $(basename "$ONLY")"
+  fi
+fi
+
+rm -f "$SRC/push.sh"
+cp -rT "$SRC" "$REPO"
 
 git add -A
 if git diff --cached --quiet; then
@@ -39,3 +50,4 @@ fi
 git commit -m "$MSG"
 git push
 echo "fertig"
+PUSH_EOF

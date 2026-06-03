@@ -2,9 +2,9 @@ function About() {
   return (
     <section className="about" id="ueber">
       <div className="wrap">
-        <div className="eb">Wenn ihr Bergamo noch nicht kennt</div>
-        <h2>Seit über 30 Jahren<br/>am O-Berg.</h2>
-        <div className="copy">
+        <div className="col-left">
+          <div className="eb">Wenn ihr Bergamo noch nicht kennt</div>
+          <div className="copy">
           <p>
             Bergamo ist eine Open-Air-Veranstaltung, die inzwischen schon
             seit über 30 Jahren am <strong>O-Berg</strong> zwischen
@@ -23,7 +23,9 @@ function About() {
             Bei Fragen meldet euch gerne über den Kontaktbereich bei uns.
             Ansonsten: bis dahin — wir freuen uns auf euch!
           </p>
+          </div>
         </div>
+        <h2>Seit über 30 Jahren<br/>am O-Berg.</h2>
       </div>
     </section>
   );

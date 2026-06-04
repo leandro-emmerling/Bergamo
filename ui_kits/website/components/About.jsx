@@ -8,7 +8,7 @@ function About() {
           <p>
             Bergamo ist eine Open-Air-Veranstaltung, die inzwischen schon
             seit über 30 Jahren am <strong>O-Berg</strong> zwischen
-            <strong> Schwanfeld</strong> und <strong>Obereisenheim</strong> 
+            <strong> Schwanfeld</strong> und <strong>Obereisenheim </strong>
             stattfindet.
           </p>
           <p>

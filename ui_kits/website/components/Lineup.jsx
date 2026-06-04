@@ -44,7 +44,7 @@ function Lineup() {
           eb="Samstag · 01.08.2026 · Abend"
           num="01"
           title={<>All Mixed Up</>}
-          sub="Club-DJ am Pult: House, Charts, aktuelle Sounds. Auf der Lichtung getanzt, bis die Sonne kommt."
+          sub="Club-DJ am Pult: House, Charts, aktuelle Sounds. Auf der Lichtung getanzt, bis die Sonne aufgeht."
           footerL="ab 21:00 Uhr"
           footerR="Einlass 20:30"
         />

@@ -17,7 +17,7 @@ function Anfahrt() {
           </p>
           <div className="coords">49.909626, 10.144008</div>
           <p className="muted">
-            Parken kostenlos am Parkplatz an der Schule in Schwanfeld.
+            <strong>Parken</strong>: kostenlos neben dem Open-Air Gelände oder am Parkplatz an der Schule in Schwanfeld.
           </p>
           <p className="muted">
             <strong>Shuttle</strong>: pendelt am Samstag während des

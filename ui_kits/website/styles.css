@@ -625,16 +625,16 @@ body { background: var(--paper); color: var(--ink); overflow-x: hidden; }
   padding: 8px 12px; background: var(--ink);
   border-top: 1px solid var(--ink); border-right: 1px solid var(--ink);
 }
-.impressionen .shot-crowd { grid-column: span 8; aspect-ratio: 16 / 10; }
-.impressionen .shot-bar   { grid-column: span 4; aspect-ratio: 3 / 4; }
-.impressionen .shot-team  { grid-column: span 12; aspect-ratio: 24 / 9; }
+.impressionen .shot-crowd    { grid-column: span 6; aspect-ratio: 3 / 2; }
+.impressionen .shot-lichtung { grid-column: span 6; aspect-ratio: 3 / 2; }
+.impressionen .shot-team     { grid-column: span 12; aspect-ratio: 24 / 9; }
 @media (max-width: 760px) {
   .impressionen .shot-crowd,
-  .impressionen .shot-bar,
+  .impressionen .shot-lichtung,
   .impressionen .shot-team { grid-column: span 12; }
-  .impressionen .shot-crowd { aspect-ratio: 16 / 10; }
-  .impressionen .shot-bar   { aspect-ratio: 4 / 3; }
-  .impressionen .shot-team  { aspect-ratio: 16 / 9; }
+  .impressionen .shot-crowd    { aspect-ratio: 16 / 10; }
+  .impressionen .shot-lichtung { aspect-ratio: 16 / 10; }
+  .impressionen .shot-team     { aspect-ratio: 16 / 9; }
 }
 .impressionen .ig-hint {
   max-width: var(--container-max); margin: clamp(28px, 4vw, 44px) auto 0;

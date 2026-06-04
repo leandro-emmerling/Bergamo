@@ -11,9 +11,9 @@ function Impressionen() {
           <img src="assets/media/crowd.jpg" alt="Volle Lichtung bei Nacht vor der Bühne" loading="lazy" />
           <figcaption>Live auf der Lichtung</figcaption>
         </figure>
-        <figure className="shot shot-bar">
-          <img src="assets/media/shotbar.jpg" alt="Shotbar zwischen den Zelten" loading="lazy" />
-          <figcaption>Unsere Shotbar</figcaption>
+        <figure className="shot shot-lichtung">
+          <img src="assets/media/lichtung.jpg" alt="Die Lichtung am O-Berg bei Nacht aus der Luft" loading="lazy" />
+          <figcaption>Die Lichtung von oben</figcaption>
         </figure>
         <figure className="shot shot-team">
           <img src="assets/media/team-2025.jpg" alt="Das Team vom Container e.V. 2025" loading="lazy" />
